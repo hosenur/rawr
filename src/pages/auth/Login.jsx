@@ -1,10 +1,11 @@
 import IonIcon from "@reacticons/ionicons";
-import AppWrite from "../../assets/appwrite.svg";
+import Logo from "../../assets/logo.svg";
+import BuiltWithAppWrite from "../../assets/built-with-appwrite.svg";
 export default function Login() {
   return (
-    <div className="flex items-center justify-center h-screen bg-gradient-to-r from-rose-50 to-teal-50">
+    <div className="flex gap-5  flex-col items-center justify-center h-screen bg-gradient-to-r from-rose-50 to-teal-50">
       <div className="w-96 bg-white rounded-xl p-10 flex flex-col gap-5 shadow-rose-100 shadow-xl">
-        <img className="w-24 logo" src={AppWrite} alt="" />
+        <img className="w-48 logo" src={Logo} alt="" />
         <div className="flex flex-col gap-2">
           <span>Email</span>
           <input
@@ -35,6 +36,7 @@ export default function Login() {
 
             </div>
       </div>
+      <img src={BuiltWithAppWrite} alt="" className="w-48" />
     </div>
   );
 }
