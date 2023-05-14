@@ -5,7 +5,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/login" Component={Login} />
+        <Route exact path="/login" Component={Login} />
       </Routes>
     </Router>
   );
