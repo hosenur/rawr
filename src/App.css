@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.logo {
+  cursor: pointer;
+  will-change: filter;
+  transition: 0.75s;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1em #fb7185);
+}
