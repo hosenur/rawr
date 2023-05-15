@@ -4,7 +4,7 @@ import BuiltWithAppWrite from "../../assets/built-with-appwrite.svg";
 export default function Login() {
   return (
     <div className="flex gap-5  flex-col items-center justify-center h-screen bg-gradient-to-r from-rose-50 to-teal-50">
-      <div className="w-96 bg-white rounded-xl p-10 flex flex-col gap-5 shadow-rose-100 shadow-xl">
+      <div className="w-80 md:w-96 bg-white rounded-xl p-5 md:p-10 flex flex-col gap-5 shadow-rose-100 shadow-xl">
         <img className="w-48 logo" src={Logo} alt="" />
         <div className="flex flex-col gap-2">
           <span>Email</span>
@@ -13,7 +13,7 @@ export default function Login() {
             className="w-full border focus:ring-0 rounded h-10 px-2"
             placeholder="Example : mail@hosenur.dev"
             name=""
-            id=""
+            id="email"
           />
         </div>
         <div className="flex flex-col gap-2">
@@ -23,7 +23,7 @@ export default function Login() {
             className="w-full border focus:ring-0 rounded h-10 px-2"
             placeholder="Super Strong Password"
             name=""
-            id=""
+            id="password"
           />
         </div>
 
